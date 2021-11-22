@@ -1,4 +1,4 @@
-# pfSense Backup tool
+# pyfSense Backup
 
 ### Warning
 The data pulled from these backups will have sensative information stored in them. e.g. admin login credentials. Though its advised to seperate the user that performs the backup there is still the ability for a malicious actor to use data in the backup to escalate privileges.
@@ -7,7 +7,13 @@ The data pulled from these backups will have sensative information stored in the
 Python tool used to login to the web interface and backup the running pfsense configuration as you would through the webui. 
 
 ### Setup
-It would be best to setup an account with backup only webui access.
+
+```bash
+pip3 install -r requirements.txt
+```
+
+_It would be best to setup an account with backup only webui access (though access to backups means all local accounts)._
+
 
 ### Usage
 
